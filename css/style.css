@@ -1,0 +1,156 @@
+#spring {
+  background: #d6e6ff;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  padding: 30px;
+}
+
+#spring svg {
+  width: 90%;
+  margin: 5%;
+}
+
+.body, .tail-middle, .face-inner, .left-ear-outer, .right-ear-outer {
+  stroke: #E76541;
+  stroke-width: 1px;
+  stroke-dashoffset: 250px;
+  stroke-dasharray: 250px;
+  fill: #d6e6ff;
+}
+
+.body {
+  animation: draw 2s linear forwards,     fillOrange 2s linear forwards 2s;
+}
+
+.tail-middle {
+  fill: #d6e6ff;
+  animation: draw 2.2s linear forwards 2.5s, fillOrange 1.2s linear forwards 3.5s;
+}
+
+.face-left, .face-right, .tail-end {
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-dashoffset: 250px;
+  stroke-dasharray: 250px;
+  fill: #d6e6ff;
+}
+
+.left-ear-inner, .right-ear-inner {
+  stroke: #E49788;
+  stroke-width: 1px;
+  stroke-dashoffset: 250px;
+  stroke-dasharray: 250px;
+  fill: #d6e6ff;
+}
+
+.eye-left, .eye-right {
+  stroke: #434849;
+  stroke-width: 1px;
+  stroke-dashoffset: 150px;
+  stroke-dasharray: 150px;
+  fill: #d6e6ff;
+}
+
+.eye-left-inner, .eye-right-inner {
+   stroke: #fff;
+  stroke-width: 1px;
+  stroke-dashoffset: 100px;
+  stroke-dasharray: 100px;
+  fill: #d6e6ff;
+}
+
+
+.nose {
+  stroke: #434849;
+  stroke-width: 1px;
+  stroke-dashoffset: 100px;
+  stroke-dasharray: 100px;
+  fill: #d6e6ff;
+}
+
+.tail-end {
+  animation: draw 2.2s linear forwards 4s, fillWhite 1.2s linear forwards 5s;
+}
+
+.face-left {
+  animation: draw 2.2s linear forwards 5.5s, fillWhite 1.2s linear forwards 6.5s;
+}
+
+.face-right {
+  animation: draw 2.2s linear forwards 7.5s, fillWhite 1.2s linear forwards 8.5s;
+}
+
+.face-inner {
+  animation: draw 1s linear forwards 9.5s, fillOrange 1.2s linear forwards 11s;
+}
+
+.left-ear-outer {
+    animation: draw 1.5s linear forwards 11.5s, fillOrange 1.2s linear forwards 12.5s;
+}
+
+.right-ear-outer {
+   animation: draw 1.5s linear forwards 13s, fillOrange 1.2s linear forwards 14s;
+}
+
+.left-ear-inner {
+  animation: draw 1.5s linear forwards 14.5s, fillOrange 1.2s linear forwards 15s;
+}
+
+.right-ear-inner {
+    animation: draw 1.5s linear forwards 15.5s, fillOrange 1.2s linear forwards 16.5s;
+}
+
+.eye-left {
+   animation: draw 1.5s linear forwards 17s, fillBlack 1.2s linear forwards 17.5s;
+}
+
+.eye-right {
+  animation: draw 1.5s linear forwards 18s, fillBlack 1.2s linear forwards 18.5s;
+}
+
+.eye-left-inner {
+  animation: draw 1.5s linear forwards 19s, fillWhite 1.2s linear forwards 19.5s;
+}
+
+.eye-right-inner {
+  animation: draw 1.5s linear forwards 20s, fillWhite 1.2s linear forwards 20.5s;
+}
+
+.nose {
+  animation: draw 2s linear forwards 21s, fillBlack 1.2s linear forwards 22s;
+}
+
+@keyframes draw {
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+
+@keyframes fillOrange {
+  
+  to {
+    fill: #E76541;
+  }
+}
+
+@keyframes fillWhite {
+  to {
+    fill: #fff;
+  }
+  
+}
+
+@keyframes fillLightOrange {
+  to {
+    fill: #E49788;
+  }
+}
+
+@keyframes fillBlack {
+  to {
+    fill: #434849;
+  }
+}
